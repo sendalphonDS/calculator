@@ -26,3 +26,19 @@
 input[type=range]::-webkit-slider-thumb {
    background: #FF3366 ; 
 }
+
+.estiloNumero1{
+    font-size: 20px;
+    font-weight: 800;
+    
+}
+
+.sumaresta{
+    cursor: pointer;
+    background-color: #FF4C4F5E;  
+    padding: 7px; 
+    border-radius: 15px;
+    margin-left: 3px;
+
+
+}
