@@ -3,9 +3,9 @@
         <h2 class="titulo" >Rudi CALCULATOR</h2>
         <div class="row">
             <div class="col-lg-6" >
-                <div class="fondoItem">
-                    <div class="contenedor">
-                        <i class="fa  fa-mars sexo"></i>
+                <div class="fondoItem" [ngClass]="{'sexoDesactivo':sexo ==='Femenino'}" >
+                    <div class="contenedor" style="cursor:pointer;" (click)="masculino()" >
+                        <i class="fa  fa-mars sexo "></i>
                         <P>Masculino</P>
                     </div>
                     
@@ -14,9 +14,9 @@
 
             </div>
             <div class="col-lg-6">
-                <div class="fondoItem">
-                    <div class="contenedor">
-                        <i class="fa fa-venus sexo"></i>     
+                <div class="fondoItem "  [ngClass]="{'sexoDesactivo':sexo ==='Masculino'}">
+                    <div class="contenedor" style="cursor:pointer;" (click)="femenino()" >
+                        <i class="fa fa-venus sexo "></i>     
                         <p>Femenino</p>
                     </div>
                     
