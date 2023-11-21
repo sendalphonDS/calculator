@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-inicio',
@@ -10,6 +11,10 @@ export class InicioComponent {
   peso = 60;
   altura = 170;
   sexo = 'Masculino';
+  constructor(private router: Router ){
+
+  }
+
   cambiaraltura(event: any){
     this.altura = event.target.value;
   }
@@ -20,5 +25,8 @@ export class InicioComponent {
   femenino(){
     this.sexo = 'Femenino';
   }
+  calcularBMI(){
+    this.router.navigate(['/resultado'])
 
+  }
 }
